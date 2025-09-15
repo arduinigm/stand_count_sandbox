@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.mp4
+*.csv
+*.jpg
+*.jpeg
+*.png
+*.pth
+*.pt
+.venv/
+.env
+.git
