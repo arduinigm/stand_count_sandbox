@@ -7,23 +7,19 @@ An initial, rudimentary model is available for testing. It has been trained with
 
 **Repository Structure**
 stand_count/
-│
-├── app.py                  # Streamlit app for inference (UI)
-├── requirements.txt        # Python dependencies
-├── README.md               # Project documentation
-│
-├── models/                 # Trained model(s) saved as .pth
-│
-├── src/                    # Core source code
-│   ├── data_loader.py      # Custom dataset and dataloader utilities
-│   ├── regression_model.py # CNN regression model + training loop
-│   ├── train_regression.py # Script for training the model
-│   ├── evaluate_regression.py # Model evaluation and plotting
-│
-└── data/                   # CSVs + image folders
-    ├── dataset_train.csv   # Training metadata
-    ├── dataset_test.csv    # Test metadata
-    └── images/             # Image files
+    app.py                  # Streamlit app for inference (UI)
+    requirements.txt        # Python dependencies
+    README.md               # Project documentation
+    models/                 # Trained model(s) saved as .pth
+    src/                    # Core source code
+        data_loader.py          # Custom dataset and dataloader utilities
+        regression_model.py     # CNN regression model + training loop
+        train_regression.py     # Script for training the model
+        evaluate_regression.py  # Model evaluation and plotting
+    data/                   # CSVs + image folders
+    dataset_train.csv   # Training metadata for new model training
+    dataset_test.csv    # Test metadata for new model training
+    images/             # Image files for new model training
 
 **Technologies Used**
 Programming language: Python 3.10+
