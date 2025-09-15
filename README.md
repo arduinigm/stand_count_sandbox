@@ -6,20 +6,20 @@ The project goes from data preprocessing, model training, and evaluation to depl
 An initial, rudimentary model is available for testing. It has been trained with 5 meter single rows.
 
 **Repository Structure**
-stand_count/
-app.py # Streamlit app for inference (UI)
-requirements.txt # Python dependencies
-README.md # Project documentation
-models/ # Trained model(s) saved as .pth
-src/ # Core source code
-data_loader.py # Custom dataset and dataloader utilities
-regression_model.py # CNN regression model + training loop
-train_regression.py # Script for training the model
-evaluate_regression.py # Model evaluation and plotting
-data/ # CSVs + image folders
-dataset_train.csv # Training metadata for new model training
-dataset_test.csv # Test metadata for new model training
-images/ # Image files for new model training
+* stand_count/
+  * app.py # Streamlit app for inference (UI)
+  * requirements.txt # Python dependencies
+  * README.md # Project documentation
+  * models/ # Trained model(s) saved as .pth
+  * src/ # Core source code
+    * data_loader.py # Custom dataset and dataloader utilities
+    * regression_model.py # CNN regression model + training loop
+    * train_regression.py # Script for training the model
+    * evaluate_regression.py # Model evaluation and plotting
+  * data/ # CSVs + image folders
+    * dataset_train.csv # Training metadata for new model training
+    * dataset_test.csv # Test metadata for new model training
+    * images/ # Image files for new model training
 
 **Technologies Used**
 Programming language: Python 3.10+
@@ -33,11 +33,11 @@ Containerization: Docker
 1. Clone the repository:
 git clone https://github.com/yourusername/stand_count.git
 cd stand_count
-2. Create and activate a virtual environment:
+3. Create and activate a virtual environment:
 python -m venv .venv
 source .venv/bin/activate   # Linux/Mac
 .venv\Scripts\activate      # Windows
-3. Install dependencies:
+4. Install dependencies:
 pip install -r requirements.txt
 5. Run the Streamlit app:
 streamlit run app.py
@@ -72,6 +72,7 @@ The main purpose is to demonstrate the full ML → Deployment workflow.
 **Author Notes**
 Developed as a learning project in computer vision and ML deployment.
 An augmentation script is provided to create 5x new images in case the user has few samples to train a new model.
+
 
 
 
